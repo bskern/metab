@@ -1,7 +1,8 @@
+//@flow
 import React, { PropTypes } from 'react';
 import { Row, Col} from 'react-bootstrap';
 import './App.css';
-export const Article = ({title,url,isReddit}) =>{
+export const Article = ({title,url,isReddit}: { title: string, url: string, isReddit: boolean}) =>{
 
 const urlPrefix = isReddit ?'https://www.reddit.com':'';
   return (

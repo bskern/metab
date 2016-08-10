@@ -9,6 +9,12 @@ import './App.css';
 
 
 class App extends React.Component {
+
+  // state: {
+  //    articlesSR1: Array<Article>,
+  //    articlesSR2:
+  // };
+
   constructor(props){
     super(props);
     this.state = {

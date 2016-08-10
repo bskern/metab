@@ -1,7 +1,7 @@
+//@flow
 import React, { PropTypes } from 'react';
-// import { Row, Col} from 'react-bootstrap';
 import './App.css';
-export const Tweet = ({text,name,screenName,imageUrl}) =>{
+export const Tweet = ({text,name,screenName,imageUrl}:{text:string,name:string,screenName:string,imageUrl:string}) =>{
 
 
   return (

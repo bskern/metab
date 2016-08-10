@@ -1,8 +1,9 @@
+//@flow
 import React, { PropTypes } from 'react';
 import Header from './Header';
 import Tweet from './Tweet';
-//console.log(tweet.text,tweet.user.name,tweet.user.screen_name,tweet.user.profile_image_url));
-const TweetContainer = ({title,tweets}) => (
+
+const TweetContainer = ({title,tweets}:{title:string,tweets:Array<any>}) => (
       <div>
         <Header name={title} cssClass="TwitterHeader"/>
         {tweets.map((tweet, index) =>(

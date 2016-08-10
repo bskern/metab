@@ -1,8 +1,9 @@
+//@flow
 import React, { PropTypes } from 'react';
 import {  Navbar, Nav, NavItem } from 'react-bootstrap'
 
 
-const WeatherHeader = ({currentTemp,desc,high,low}) => (
+const WeatherHeader = ({currentTemp,desc,high,low}:{currentTemp:number,desc:string,high:string,low:string}) => (
   <Navbar inverse>
    <Navbar.Header>
      <Navbar.Brand>Minneapolis {currentTemp} - {desc}</Navbar.Brand>

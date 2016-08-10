@@ -1,7 +1,8 @@
+//@flow
 import React, { PropTypes } from 'react';
 import { Row, Col} from 'react-bootstrap';
 
-export const Header = ({name,cssClass}) => (
+export const Header = ({name,cssClass}:{name: string, cssClass: DataProviderCssName}) => (
     <Row>
       <Col md={12}><div className={cssClass}>{name}</div></Col>
     </Row>

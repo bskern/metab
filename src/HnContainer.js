@@ -1,12 +1,13 @@
+//@flow
 import React, { PropTypes } from 'react';
 import Article from './Article';
 import Header from './Header';
 
 
-const HackerNewsContainer = ({title,items}) => (
+const HackerNewsContainer = ({title,items}: {title: string, items: Array<any>}) => (
       <div>
         <Header name={title} cssClass="HNheader"/>
-        {items.map((item, index) =>(
+        {items.map((item, index) => (
           <Article
           title={item.title}
           url={item.url}
