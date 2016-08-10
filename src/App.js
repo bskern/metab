@@ -1,7 +1,6 @@
 import React from 'react';
 import SubredditContainer from './SubredditContainer';
 import HnContainer from './HnContainer';
-import TweetContainer from './TweetContainer';
 import { Row, Col} from 'react-bootstrap';
 import weather from 'yahoo-weather';
 import WeatherHeader from './WeatherHeader';
@@ -155,40 +154,6 @@ loadIndividualItems(ids,type){
                   title="Ask"
                   items={this.state.hnAsk}
                   />
-                </Col>
-              </Row>
-              <Row>
-                <Col md={3}>
-                  <div>
-                    <TweetContainer
-                     title="BKERN DEVS"
-                     tweets={this.state.bkernDevTweets}
-                     />
-                  </div>
-                </Col>
-                <Col md={3}>
-                  <div>
-                    <TweetContainer
-                     title="BKERN IOS"
-                     tweets={this.state.bkernIosTweets}
-                     />
-                  </div>
-                </Col>
-                <Col md={3}>
-                  <div>
-                    <TweetContainer
-                     title="Scala"
-                     tweets={this.state.scalaTweets}
-                     />
-                  </div>
-                </Col>
-                <Col md={3}>
-                  <div>
-                    <TweetContainer
-                     title="Devs"
-                     tweets={this.state.devsTweets}
-                     />
-                  </div>
                 </Col>
               </Row>
             </div>
